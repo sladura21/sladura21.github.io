@@ -1,1 +1,353 @@
-heloo
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body{
+  background-color:#FFBC05;
+}
+
+.content{
+  width:450px ;
+  height:400px;
+  float: left;
+}
+
+.title{
+  width:10%;
+  float:left;
+  position:fixed;
+  padding-top:20px;
+}
+
+
+.content1{
+background-color:#C70D00; 
+} 
+
+.content2{
+  background-color:#f50035; 
+display:none;
+}
+
+.content3{
+background-color:#FF890A;
+  display:none;
+} 
+
+.content4{
+  display:none;
+
+}
+
+.content{
+background-color:#75D1C8; 
+  
+}
+
+.cnt{
+width:85%;
+min-height:100px; 
+  margin-left:15%;
+margin-top:10px;
+}
+
+.cntContent{
+width:85%;
+height:150px;
+
+margin-left:15%;
+margin-top:30px;
+}
+
+.menu {
+  display:block;
+  width:100%;
+  background:green;
+  margin-top:10px;
+  color:white;
+  text-decoration:none;
+  text-align:center;
+}
+
+.img{
+  width:100px;
+  height:100px;
+  margin-top:30px;
+}
+
+.img:hover{
+  width:120px;
+  height:120px;
+  margin-top:10px;
+}
+
+.imgcl {
+  height:100px;
+  width:100px;
+   margin-top:50px;
+     margin-left:50px;
+  
+}
+
+.imgcl:hover {
+  margin-top:0px;
+  margin-left:0px;
+  width:150px;
+  height:150px;
+ 
+}
+
+p{
+  color:#fff;
+}
+</style>
+</head>
+<body>
+  <div> 
+    <div class="title">  
+      <a class="menu" data-id="profile">РїСЂРѕС„РёР»</a>
+      <a class="menu" data-id="mypicture" >РјРѕРё 
+      </a>
+      <a class="menu" data-id="picture">СЃРЅРёРјРєРё</a>
+      <a class="menu" data-id="videos" >РІРёРґРµР°</a>
+    
+    </div> 
+    <div 
+    <div class="content1 cnt" id="profile">
+    <p>РёРјРµРЅР°:РЇРЅРєРѕ Р’Р°СЃРёР»РєРѕРІ РЎС‚РѕСЏРЅРѕРІ. </p>  
+    <p>С‚РµР»РµС„РѕРЅ:0885789051. </p>
+    <p>16Рі. </p>
+    <p>РЈС‡Р° РІ РџСЂРѕС„РµСЃРёРѕРЅР°Р»РЅР° Р“РёРјРЅР°Р·РёСЏ РџРѕ Р‘РёС‚РѕРІР° Рё Р•Р»РµРєС‚СЂРѕС‚СЂР°РЅСЃРїРѕСЂС‚РЅР° РўРµС…РЅРёРєР° Рё РЎС‚СЂРѕРёС‚РµР»СЃС‚РІРѕ.<p/>
+      <p>РћР±РёС‡Р°Рј РґР° СЃРїРѕСЂС‚СѓРІР°Рј Р»СЋР±РёРјРёСЏС‚ РјРё СЃРїРѕСЂС‚ Рµ С„СѓС‚Р±РѕР».</p>
+    <p>Р»СЋР±РёРјРёСЏС‚ РјРё С„СѓС‚Р±РѕР»РёСЃС‚ Рµ Cristqno Ronaldo</p>
+    <p>
+    </div> 
+    <div class="content2 cnt" id="mypicture">
+      <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10277010_538367996307425_4422631067403461547_n.jpg?oh=83626f90504b22d6511065127b32f280&oe=54DB92F0&__gda__=1424602266_9d2bf783007b932daab782daa8c56b12" class="img"/>
+      <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10523130_514313578712867_5077364978458132573_n.jpg?oh=8751b1dae48ad987a6c6ae1766ee2db5&oe=54F506D2&__gda__=1425513307_b09414fe24352f6353bd387c0affab80" class="img"/>
+      <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10678824_538092193001672_7213922525713015217_n.jpg?oh=e8b2d6d0a9dab5d6e0d21efd590860fe&oe=54AA0408&__gda__=1424739028_b6597b28251bc11024a1c08191df462c" class="img"/>
+      <img src="https://scontent-b.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/p417x417/10635820_518563784954513_1344844970138503361_n.jpg?oh=6330455cb3da8add865330a3a076ddad&oe=54F10569"class="img"/>
+     <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/r90/10557340_499992273478331_2467692583994627939_n.jpg?oh=7df873d30f02f4339d6e5495de8ced6a&oe=54E3152D&__gda__=1423872488_a28fee4491160103b1588b8caea6bdd7"class="img"/>
+    </div> 
+    <div class="content3 cnt" id="picture">
+      <img src="https://scontent-a.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10686659_538988679578690_5365274891752906031_n.jpg?oh=5e477caf4e9c1fb39713ac97bcd2c41b&oe=54EFADC4" class="imgCl"/>
+      <img src="https://scontent-a.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/1653566_538988609578697_4354192412109090294_n.jpg?oh=71bf71d79c0507c98fb1034c7117fa08&oe=54F7D79A"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10653512_538092299668328_8171420861649666422_n.jpg?oh=60d29de60f081933d73c09111a2164ea&oe=54F7232B&__gda__=1424745107_23fe705c7326a621b65f8112fadbf5f6" class="imgcl"/>
+      <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/r90/1555394_499992140145011_5451655155449258203_n.jpg?oh=cb2c7b5b480bb2d615e39c89fadf6fe7&oe=54AB4459&__gda__=1423611584_89844630819670ef8f42f7fc4e3158c3"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10565121_494233810720844_1309652977134385743_n.jpg?oh=e1b6a3ae0abc43286fb0d9ac5c9d4835&oe=54E2D4D4&__gda__=1424931165_a79f256bfba5d1563452b2d2d133dfd1"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10403623_494228430721382_1443234649101079759_n.jpg?oh=5b29227dd862906e0a6194f5c85080c0&oe=54ABA6CB&__gda__=1425543959_ee1d2a075ebd1303e543b4fe191874cd"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10330237_463254437152115_3139660730794200009_n.jpg?oh=069731784529719d80c059d6abac39b7&oe=54DF7338&__gda__=1424219008_8313b1f14fba44077dd57c46d15088c4"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10442914_461181777359381_1603909204514255959_n.jpg?oh=659bbbfa36efd1187016596a05192844&oe=54D5159C&__gda__=1423630372_72583aa56defcbf9f3dae8d472c096be"class="imgcl"/>
+      <img src="https://scontent-b.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1544470_449415405202685_5425726503959754306_n.jpg?oh=6d051b4c02900f70ed1f2e71a40cbd72&oe=54E1D772"class="imgcl"/>
+    </div>
+    <div class="content4 cnt" id="videos">
+                                         
+                                         
+<iframe width="384" height="216" src="https://www.youtube.com/embed/Nk4N_LGWNA4" frameborder="0" allowfullscreen=""></iframe>
+      </br>
+                                          
+<iframe width="384" height="216" src="http://www.youtube.com/embed/FafAq1bUxLA" frameborder="0" allowfullscreen></iframe>
+                                                                                </br>          
+ <iframe width="384" height="216" src="http://www.youtube.com/embed/bER_cQEHjCs" frameborder="0" allowfullscreen></iframe>
+                </br>                                                         <iframe width="384" height="216" src="http://www.youtube.com/embed/VKFvCU_VmS8" frameborder="0" allowfullscreen></iframe> 
+  
+                  </br>                                                
+  </div>
+    
+ </div>
+  <div>
+  </div>
+<script id="jsbin-javascript">
+$(".menu").click(function(){
+  var attr = $(this).attr("data-id");
+  $(".cnt").hide();
+  $("#" + attr).show();
+});
+</script>
+
+<script id="jsbin-source-html" type="text/html"><html>
+<head>
+<script src="//code.jquery.com/jquery-2.1.1.min.js"><\/script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  <div> 
+    <div class="title">  
+      <a class="menu" data-id="profile">РїСЂРѕС„РёР»</a>
+      <a class="menu" data-id="mypicture" >РјРѕРё 
+      </a>
+      <a class="menu" data-id="picture">СЃРЅРёРјРєРё</a>
+      <a class="menu" data-id="videos" >РІРёРґРµР°</a>
+    
+    </div> 
+    <div 
+    <div class="content1 cnt" id="profile">
+    <p>РёРјРµРЅР°:РЇРЅРєРѕ Р’Р°СЃРёР»РєРѕРІ РЎС‚РѕСЏРЅРѕРІ. </p>  
+    <p>С‚РµР»РµС„РѕРЅ:0885789051. </p>
+    <p>16Рі. </p>
+    <p>РЈС‡Р° РІ РџСЂРѕС„РµСЃРёРѕРЅР°Р»РЅР° Р“РёРјРЅР°Р·РёСЏ РџРѕ Р‘РёС‚РѕРІР° Рё Р•Р»РµРєС‚СЂРѕС‚СЂР°РЅСЃРїРѕСЂС‚РЅР° РўРµС…РЅРёРєР° Рё РЎС‚СЂРѕРёС‚РµР»СЃС‚РІРѕ.<p/>
+      <p>РћР±РёС‡Р°Рј РґР° СЃРїРѕСЂС‚СѓРІР°Рј Р»СЋР±РёРјРёСЏС‚ РјРё СЃРїРѕСЂС‚ Рµ С„СѓС‚Р±РѕР».</p>
+    <p>Р»СЋР±РёРјРёСЏС‚ РјРё С„СѓС‚Р±РѕР»РёСЃС‚ Рµ Cristqno Ronaldo</p>
+    <p>
+    </div> 
+    <div class="content2 cnt" id="mypicture">
+      <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/v/t1.0-9/10277010_538367996307425_4422631067403461547_n.jpg?oh=83626f90504b22d6511065127b32f280&oe=54DB92F0&__gda__=1424602266_9d2bf783007b932daab782daa8c56b12" class="img"/>
+      <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10523130_514313578712867_5077364978458132573_n.jpg?oh=8751b1dae48ad987a6c6ae1766ee2db5&oe=54F506D2&__gda__=1425513307_b09414fe24352f6353bd387c0affab80" class="img"/>
+      <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10678824_538092193001672_7213922525713015217_n.jpg?oh=e8b2d6d0a9dab5d6e0d21efd590860fe&oe=54AA0408&__gda__=1424739028_b6597b28251bc11024a1c08191df462c" class="img"/>
+      <img src="https://scontent-b.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/p417x417/10635820_518563784954513_1344844970138503361_n.jpg?oh=6330455cb3da8add865330a3a076ddad&oe=54F10569"class="img"/>
+     <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/r90/10557340_499992273478331_2467692583994627939_n.jpg?oh=7df873d30f02f4339d6e5495de8ced6a&oe=54E3152D&__gda__=1423872488_a28fee4491160103b1588b8caea6bdd7"class="img"/>
+    </div> 
+    <div class="content3 cnt" id="picture">
+      <img src="https://scontent-a.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/10686659_538988679578690_5365274891752906031_n.jpg?oh=5e477caf4e9c1fb39713ac97bcd2c41b&oe=54EFADC4" class="imgCl"/>
+      <img src="https://scontent-a.xx.fbcdn.net/hphotos-xaf1/v/t1.0-9/1653566_538988609578697_4354192412109090294_n.jpg?oh=71bf71d79c0507c98fb1034c7117fa08&oe=54F7D79A"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-c-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10653512_538092299668328_8171420861649666422_n.jpg?oh=60d29de60f081933d73c09111a2164ea&oe=54F7232B&__gda__=1424745107_23fe705c7326a621b65f8112fadbf5f6" class="imgcl"/>
+      <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/r90/1555394_499992140145011_5451655155449258203_n.jpg?oh=cb2c7b5b480bb2d615e39c89fadf6fe7&oe=54AB4459&__gda__=1423611584_89844630819670ef8f42f7fc4e3158c3"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xfp1/v/t1.0-9/10565121_494233810720844_1309652977134385743_n.jpg?oh=e1b6a3ae0abc43286fb0d9ac5c9d4835&oe=54E2D4D4&__gda__=1424931165_a79f256bfba5d1563452b2d2d133dfd1"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/10403623_494228430721382_1443234649101079759_n.jpg?oh=5b29227dd862906e0a6194f5c85080c0&oe=54ABA6CB&__gda__=1425543959_ee1d2a075ebd1303e543b4fe191874cd"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10330237_463254437152115_3139660730794200009_n.jpg?oh=069731784529719d80c059d6abac39b7&oe=54DF7338&__gda__=1424219008_8313b1f14fba44077dd57c46d15088c4"class="imgcl"/>
+      <img src="https://fbcdn-sphotos-b-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/10442914_461181777359381_1603909204514255959_n.jpg?oh=659bbbfa36efd1187016596a05192844&oe=54D5159C&__gda__=1423630372_72583aa56defcbf9f3dae8d472c096be"class="imgcl"/>
+      <img src="https://scontent-b.xx.fbcdn.net/hphotos-xap1/v/t1.0-9/1544470_449415405202685_5425726503959754306_n.jpg?oh=6d051b4c02900f70ed1f2e71a40cbd72&oe=54E1D772"class="imgcl"/>
+    </div>
+    <div class="content4 cnt" id="videos">
+                                         
+                                         
+<iframe width="384" height="216" src="https://www.youtube.com/embed/Nk4N_LGWNA4" frameborder="0" allowfullscreen=""></iframe>
+      </br>
+                                          
+<iframe width="384" height="216" src="//www.youtube.com/embed/FafAq1bUxLA" frameborder="0" allowfullscreen></iframe>
+                                                                                </br>          
+ <iframe width="384" height="216" src="//www.youtube.com/embed/bER_cQEHjCs" frameborder="0" allowfullscreen></iframe>
+                </br>                                                         <iframe width="384" height="216" src="//www.youtube.com/embed/VKFvCU_VmS8" frameborder="0" allowfullscreen></iframe> 
+  
+                  </br>                                                
+  </div>
+    
+ </div>
+  <div>
+  </div>
+</body>
+</html></script>
+
+<script id="jsbin-source-css" type="text/css">body{
+  background-color:#FFBC05;
+}
+
+.content{
+  width:450px ;
+  height:400px;
+  float: left;
+}
+
+.title{
+  width:10%;
+  float:left;
+  position:fixed;
+  padding-top:20px;
+}
+
+
+.content1{
+background-color:#C70D00; 
+} 
+
+.content2{
+  background-color:#f50035; 
+display:none;
+}
+
+.content3{
+background-color:#FF890A;
+  display:none;
+} 
+
+.content4{
+  display:none;
+
+}
+
+.content{
+background-color:#75D1C8; 
+  
+}
+
+.cnt{
+width:85%;
+min-height:100px; 
+  margin-left:15%;
+margin-top:10px;
+}
+
+.cntContent{
+width:85%;
+height:150px;
+
+margin-left:15%;
+margin-top:30px;
+}
+
+.menu {
+  display:block;
+  width:100%;
+  background:green;
+  margin-top:10px;
+  color:white;
+  text-decoration:none;
+  text-align:center;
+}
+
+.img{
+  width:100px;
+  height:100px;
+  margin-top:30px;
+}
+
+.img:hover{
+  width:120px;
+  height:120px;
+  margin-top:10px;
+}
+
+.imgcl {
+  height:100px;
+  width:100px;
+   margin-top:50px;
+     margin-left:50px;
+  
+}
+
+.imgcl:hover {
+  margin-top:0px;
+  margin-left:0px;
+  width:150px;
+  height:150px;
+ 
+}
+
+p{
+  color:#fff;
+}
+</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">$(".menu").click(function(){
+  var attr = $(this).attr("data-id");
+  $(".cnt").hide();
+  $("#" + attr).show();
+});</script></body>
+</html>
